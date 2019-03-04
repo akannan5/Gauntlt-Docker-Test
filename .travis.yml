@@ -15,6 +15,6 @@ before_install:
 script:
   - cat ./config/cucumber.yml
   - docker run -t --rm -v $(pwd):/working -w /working gauntlt/gauntlt ./attacks/hello_world/hello-world.attack --format=html > hello.html
-  - docker run -t --rm -v $(pwd):/working -w /working gauntlt/gauntlt ./attacks/env-vars/port-env-vars.attack --format=html > nmapat.html
-  - docker run -t --rm -v $(pwd):/working -w /working gauntlt/gauntlt ./attacks/ci/xss.attack --format=html > cross.html
+  - docker run -t --rm -v $(pwd):/working -w /working gauntlt/gauntlt ./attacks/env-vars/port-env-vars.attack
+  - docker run -t --rm -v $(pwd):/working -w /working gauntlt/gauntlt ./attacks/ci/xss.attack
 
