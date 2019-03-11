@@ -15,4 +15,3 @@ This repository is the example code and lab environment for Gauntlt Docker.
   make gruyere-start
 ```
 
-### Test
